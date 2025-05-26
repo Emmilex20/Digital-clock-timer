@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi Countdown Timers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>⏱ Multi Countdown Timers</h1>
+      <button id="themeToggle">🌙 Toggle Theme</button>
+    </header>
+
+    <form id="timerForm">
+      <input type="text" id="label" placeholder="Label" />
+      <input type="number" id="hours" placeholder="HH" min="0" />
+      <input type="number" id="minutes" placeholder="MM" min="0" max="59" />
+      <input type="number" id="seconds" placeholder="SS" min="0" max="59" />
+      <button type="submit">Add Timer</button>
+    </form>
+
+    <div id="timersContainer"></div>
+
+    <h2>🕘 History</h2>
+    <ul id="historyList"></ul>
+    <div class="history-buttons">
+      <button id="exportHistory">⬇ Export</button>
+      <input type="file" id="importHistory" />
+    </div>
+  </div>
+
+  <audio id="alarm" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
